@@ -1,4 +1,4 @@
-#Setup Mac
+#Setup Mac (Memo)
 
 ##Command Line Tools for Xcodeのインストール
 ```
