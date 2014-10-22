@@ -8,6 +8,7 @@ install ag
 install git
 install tig
 install zsh
+install vim
 install tmux
 install mysql
 install redis
