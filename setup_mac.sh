@@ -7,7 +7,7 @@ require() { if ! enabled $1; then echo "Please install $1."; exit 1; fi }
 # cloning my dotfiles
 DOTFILES=$HOME/dotfiles
 if [ ! -e $DOTFILES ]; then
-    git clone https://github.com/shirakiya/dotfiles.git $HOME/
+    git clone https://github.com/shirakiya/dotfiles.git $DOTFILES
     sh $DOTFILES/dotfilesLink.sh
 fi
 
