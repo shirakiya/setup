@@ -13,10 +13,6 @@ install tmux
 install mysql
 install redis
 install nginx
-install tree
-install zsh
-install tmux
-install tig
 install node
 install plenv perl-build
 install rbenv ruby-build
