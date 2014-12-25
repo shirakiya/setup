@@ -8,7 +8,17 @@ enabled() {
         echo "Already installed $1"
         return 0
     else
-        echo "Install $1 now ..."
+        echo "Install $1 just now ..."
+        return 1
+    fi
+}
+
+exist() {
+    if [ -e $1 ]; then
+        echo "Already cloned to $1 through Git"
+        return 0
+    else
+        echo "Clone to $1 just now ..."
         return 1
     fi
 }
@@ -19,7 +29,7 @@ if ! enabled xcode-select; then
 fi
 
 SETUP=$HOME/setup
-if [ ! -e $SETUP ]; then
+if ! exist $SETUP; then
     git clone https://github.com/shirakiya/setup.git $SETUP
 fi
 
@@ -31,7 +41,7 @@ fi
 
 # cloning my dotfiles
 DOTFILES=$HOME/dotfiles
-if [ ! -e $DOTFILES ]; then
+if ! exist $DOTFILES; then
     git clone https://github.com/shirakiya/dotfiles.git $DOTFILES
     sh $DOTFILES/dotfilesLink.sh
 fi
