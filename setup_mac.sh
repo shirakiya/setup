@@ -30,7 +30,7 @@ fi
 
 SETUP=$HOME/setup
 if ! exist $SETUP; then
-    git clone https://github.com/shirakiya/setup.git $SETUP
+    git clone git@github.com:shirakiya/setup.git $SETUP
 fi
 
 # install HomeBrew
@@ -42,7 +42,7 @@ fi
 # cloning my dotfiles
 DOTFILES=$HOME/dotfiles
 if ! exist $DOTFILES; then
-    git clone https://github.com/shirakiya/dotfiles.git $DOTFILES
+    git clone git@github.com:shirakiya/dotfiles.git $DOTFILES
     sh $DOTFILES/dotfilesLink.sh
 fi
 
