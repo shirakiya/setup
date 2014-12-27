@@ -5,20 +5,20 @@ set -u
 enabled() {
     type $1 > /dev/null 2>&1
     if [ $? -eq 0 ]; then
-        echo "Already installed $1"
+        echo "\033[31mAlready installed $1\033[m"
         return 0
     else
-        echo "Install $1 just now ..."
+        echo "\033[31mInstall $1 just now ...\033[m"
         return 1
     fi
 }
 
 exist() {
     if [ -e $1 ]; then
-        echo "Already cloned to $1 through Git"
+        echo "\033[31mAlready cloned to $1 through Git\033[m"
         return 0
     else
-        echo "Clone to $1 just now ..."
+        echo "\033[31mClone to $1 just now ...\033[m"
         return 1
     fi
 }
