@@ -16,8 +16,14 @@ brew install mysql
 brew install redis
 brew install nginx
 brew install node
+brew install go
+brew install python
 brew install plenv perl-build
 brew install rbenv ruby-build
 brew install rbenv-gemset
 brew install rbenv-gem-rehash
 brew install ansible
+brew install reattach-to-user-namespace
+
+brew tap peco/peco
+brew install peco
