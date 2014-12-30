@@ -5,7 +5,7 @@ set -u
 enabled() {
     type $1 > /dev/null 2>&1
     if [ $? -eq 0 ]; then
-        echo "\033[31mAlready installed $1\033[m"
+        echo "\033[32mAlready installed $1\033[m"
         return 0
     else
         echo "\033[31mInstall $1 just now ...\033[m"
@@ -15,7 +15,7 @@ enabled() {
 
 exist() {
     if [ -e $1 ]; then
-        echo "\033[31mAlready cloned to $1 through Git\033[m"
+        echo "\033[32mAlready cloned to $1 through Git\033[m"
         return 0
     else
         echo "\033[31mClone to $1 just now ...\033[m"
