@@ -17,7 +17,7 @@ brew install tmux
 brew install mysql
 brew install redis
 brew install nginx
-brew install node
+brew install nodebrew
 brew install go
 brew install python
 brew install plenv perl-build
