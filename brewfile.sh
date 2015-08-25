@@ -10,7 +10,9 @@ brew install ag
 brew install git
 brew install tig
 brew install zsh
-brew install vim
+brew install zsh-completions
+brew install zsh-syntax-highlighting
+brew install vim --with-lua
 brew install tmux
 brew install mysql
 brew install redis
