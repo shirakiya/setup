@@ -12,6 +12,7 @@ brew install tig
 brew install zsh
 brew install zsh-completions
 brew install zsh-syntax-highlighting
+brew install source-highlight
 brew install vim --with-lua
 brew install tmux
 brew install mysql
@@ -29,3 +30,6 @@ brew install reattach-to-user-namespace
 
 brew tap peco/peco
 brew install peco
+
+brew tap motemen/ghq
+brew install ghq
