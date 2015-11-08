@@ -7,6 +7,7 @@ brew upgrade
 brew install wget
 brew install tree
 brew install ag
+brew install jq
 brew install git
 brew install tig
 brew install zsh
@@ -20,13 +21,14 @@ brew install redis
 brew install nginx
 brew install nodebrew
 brew install go
-brew install python
+brew install pyenv pyenv-virtualenv
 brew install plenv perl-build
 brew install rbenv ruby-build
 brew install rbenv-gemset
 brew install rbenv-gem-rehash
 brew install ansible
 brew install reattach-to-user-namespace
+brew install awscli
 
 brew tap peco/peco
 brew install peco
