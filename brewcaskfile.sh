@@ -1,10 +1,9 @@
 #!/bin/sh
 
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-
 # homebrew-caskのインストール
-brew tap phinze/homebrew-cask || true
-brew install brew-cask
+if ! brew list | grep brew-cask > /dev/null; then
+  brew install caskroom/cask/brew-cask
+fi
 
 brew cask install appcleaner
 brew cask install coteditor
