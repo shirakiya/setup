@@ -12,7 +12,7 @@ brew install git
 brew install tig
 brew install zsh
 brew install zsh-completions
-brew install zsh-syntax-highlighting
+#brew install zsh-syntax-highlighting
 brew install source-highlight
 brew install vim --with-lua
 brew install tmux
