@@ -24,8 +24,6 @@ brew install go
 brew install pyenv pyenv-virtualenv
 brew install plenv perl-build
 brew install rbenv ruby-build
-brew install rbenv-gemset
-brew install rbenv-gem-rehash
 brew install ansible
 brew install reattach-to-user-namespace
 brew install awscli
