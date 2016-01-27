@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -u
 
@@ -25,7 +25,7 @@ exist() {
 
 # install command line tools
 if ! enabled xcode-select; then
-    xcode-select --install
+  xcode-select --install
 fi
 
 SETUP=$HOME/setup
@@ -35,15 +35,21 @@ fi
 
 # install HomeBrew
 if ! enabled brew; then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    sh $SETUP/Brewfile.sh
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  sh $SETUP/Brewfile.sh
+
+  # opensslをHomebrewでインストールしたものに変更
+  OPENSSL_PATH=`which openssl`
+  if [ $OPENSSL_PATH = '/usr/bin/openssl' ]; then
+    brew link openssl --force
+  fi
 fi
 
 # cloning my dotfiles
 DOTFILES=$HOME/dotfiles
 if ! exist $DOTFILES; then
-    git clone git@github.com:shirakiya/dotfiles.git $DOTFILES
-    sh $DOTFILES/dotfilesLink.sh
+  git clone git@github.com:shirakiya/dotfiles.git $DOTFILES
+  sh $DOTFILES/dotfilesLink.sh
 fi
 
 exit 0
