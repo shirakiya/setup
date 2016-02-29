@@ -8,6 +8,7 @@ brew install wget
 brew install tree
 brew install ag
 brew install ccat  # `ccat` でcatの出力をカラフルにする
+brew install colordiff
 brew install jq
 brew install gibo
 brew install git
