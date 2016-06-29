@@ -24,3 +24,6 @@ brew cask install slack
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
+
+# インストール時に使用したzipファイルを削除する
+brew cask cleanup
