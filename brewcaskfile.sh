@@ -12,7 +12,6 @@ brew cask install evernote
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-japanese-ime
-brew cask install hipchat
 brew cask install iterm2
 brew cask install java
 brew cask install karabiner
