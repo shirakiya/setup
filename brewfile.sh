@@ -34,6 +34,7 @@ brew install ansible
 brew install reattach-to-user-namespace
 brew install awscli
 brew install pstree
+brew install direnv
 
 brew tap peco/peco
 brew install peco
