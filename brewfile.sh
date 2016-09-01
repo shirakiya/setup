@@ -33,6 +33,7 @@ brew install scalaenv
 brew install ansible
 brew install reattach-to-user-namespace
 brew install awscli
+brew install pstree
 
 brew tap peco/peco
 brew install peco
