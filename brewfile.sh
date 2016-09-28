@@ -41,3 +41,6 @@ brew install peco
 
 brew tap motemen/ghq
 brew install ghq
+
+brew tap homebrew versions
+brew intall gcc47
