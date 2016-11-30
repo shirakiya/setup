@@ -10,6 +10,7 @@ brew install ag
 brew install ccat  # `ccat` でcatの出力をカラフルにする
 brew install colordiff
 brew install jq
+brew install nkf
 brew install gibo
 brew install git
 brew install tig
