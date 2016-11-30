@@ -7,6 +7,7 @@ fi
 
 brew cask install appcleaner
 brew cask install dropbox
+brew cask install docker
 brew cask install evernote
 brew cask install firefox
 brew cask install flowdock
@@ -17,7 +18,6 @@ brew cask install java
 brew cask install karabiner
 #brew cask install kobito  # Not found in Homebrew Cask
 brew cask install licecap
-#brew cask install pocket  # Not found in Homebrew Cask
 brew cask install seil
 brew cask install sequel-pro
 brew cask install skype
