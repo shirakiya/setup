@@ -36,6 +36,7 @@ brew install reattach-to-user-namespace
 brew install awscli
 brew install pstree
 brew install direnv
+brew install yarn
 
 brew tap peco/peco
 brew install peco
