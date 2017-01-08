@@ -36,7 +36,9 @@ fi
 # install HomeBrew
 if ! enabled brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  sh $SETUP/Brewfile.sh
+  cd $SETUP
+  brew bundle
+  cd $HOME
 
   # opensslをHomebrewでインストールしたものに変更
   OPENSSL_PATH=`which openssl`
