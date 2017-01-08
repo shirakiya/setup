@@ -9,7 +9,6 @@ tap 'homebrew/services'
 tap 'homebrew/versions'
 tap 'peco/peco'
 tap 'sanemat/font'
-tap 'motemen/ghq'
 
 brew 'libyaml'
 brew 'openssl@1.1'
