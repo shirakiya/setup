@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -u
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 enabled() {
     type $1 > /dev/null 2>&1
@@ -37,7 +38,8 @@ fi
 if ! enabled brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   cd $SETUP
-  brew bundle
+  brew update
+  brew bundle --file=Brewfile
   cd $HOME
 
   # opensslをHomebrewでインストールしたものに変更
@@ -45,6 +47,9 @@ if ! enabled brew; then
   if [ $OPENSSL_PATH = '/usr/bin/openssl' ]; then
     brew link openssl --force
   fi
+
+  brew cleanup
+  brew cask cleanup
 fi
 
 # cloning my dotfiles
