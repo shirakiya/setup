@@ -9,3 +9,18 @@
 ```
 curl -fsSL https://raw.github.com/shirakiya/setup/master/setup_mac.sh | sh
 ```
+
+
+
+## After setup
+
+### bash -> zsh
+```
+$ sudo vim /etc/shells
+
+# add below line to /etc/shells
+/usr/local/bin/zsh
+
+
+$ chsh -s /usr/local/bin/zsh
+```
