@@ -35,6 +35,7 @@ brew "direnv"
 brew "elasticsearch@2.4", restart_service: true
 brew "git"
 brew "ffmpeg"
+brew "icu4c"
 brew "jpeg"
 brew "libtool"
 brew "fontforge"
