@@ -75,7 +75,6 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 brew "ruby-build"
 brew "rbenv"
-brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
 brew "scalaenv"
 brew "source-highlight"
