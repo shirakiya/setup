@@ -62,6 +62,7 @@ brew "mercurial"
 brew "mongodb"
 brew "mysql@5.6", restart_service: true
 brew "ndenv"
+brew "neovim"
 brew "nkf"
 brew "packer"
 brew "pandoc"
