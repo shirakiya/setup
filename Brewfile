@@ -93,6 +93,7 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "heroku/brew/heroku"
 brew "knqyf263/pet/pet"
+brew "sanemat/font/ricty", args: ["with-powerline"]
 brew "uetchy/nlp/knp"
 cask "appcleaner"
 cask "atom"
