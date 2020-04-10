@@ -13,7 +13,8 @@ curl -fsSL https://raw.github.com/shirakiya/setup/master/setup_mac.sh | sh
 
 
 ## After setup
-### bash -> zsh
+Switch to zsh installed with Homebrew.
+
 ```
 $ sudo vim /etc/shells
 
@@ -23,11 +24,3 @@ $ sudo vim /etc/shells
 
 $ chsh -s /usr/local/bin/zsh
 ```
-
-
-### karabiner-elements
-ref.) https://beadored.com/macos-sierra-karabiner-elements-switching-eisuu-kana/
-
-
-### iTerm2 profile
-ref.) http://qiita.com/reoring/items/a0f3d6186efd11c87f1b
