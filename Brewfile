@@ -1,4 +1,5 @@
 tap "aws/tap"
+tap "golangci/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -84,6 +85,7 @@ brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "aws/tap/aws-sam-cli"
+brew "golangci/tap/golangci-lint"
 brew "heroku/brew/heroku"
 brew "knqyf263/pet/pet"
 brew "sanemat/font/ricty", args: ["with-powerline"]
