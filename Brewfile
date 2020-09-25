@@ -59,6 +59,7 @@ brew "mysql@5.6", restart_service: true
 brew "neovim"
 brew "nkf"
 brew "nodenv"
+brew "openjdk"
 brew "pandoc"
 brew "peco"
 brew "perl-build"
