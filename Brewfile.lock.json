@@ -11,10 +11,10 @@
         "revision": "40a0ca35d884eae0ab220cf60e951acdaea303ac"
       },
       "homebrew/cask": {
-        "revision": "6f880816f2d896042d70db8aaa4372a602c3283a"
+        "revision": "91da9fe898cf202f393ad4c4514fc68cb6ee879f"
       },
       "homebrew/core": {
-        "revision": "6f4b59f73cf15d0467075d58e08c34c4a7d999f5"
+        "revision": "f8b3cb66aa8312f5172138b6fc2214fcacd38a8e"
       },
       "homebrew/services": {
         "revision": "b082342c220c490933caccbeab68504eeb7d7fa1"
@@ -26,7 +26,7 @@
         "revision": "b9c208d3a58c305764e8b311b45b65855629804c"
       },
       "homebrew/cask-fonts": {
-        "revision": "3e94c38f5bbb302eef37e06ff3d9bd2206f65488"
+        "revision": "f9c3571564962b7764fa652e1a9142d5f3e38e8f"
       },
       "shirakiya/alug": {
         "revision": "56bc9f0c56057389c838a31fccf569014eeba37a"
@@ -1402,22 +1402,22 @@
         }
       },
       "terraform": {
-        "version": "0.13.4",
+        "version": "0.13.3",
         "bottle": {
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/terraform-0.13.4.catalina.bottle.tar.gz",
-              "sha256": "05e7bf567f54c8396df8cf90470e573f5b08ebe8920bad1e638f531a54a152b6"
+              "url": "https://homebrew.bintray.com/bottles/terraform-0.13.3.catalina.bottle.tar.gz",
+              "sha256": "5f9339708d2c3c51cf4f1f6ee8391b21aed7c973a1ffeb6ff86af974351b8d00"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/terraform-0.13.4.mojave.bottle.tar.gz",
-              "sha256": "e1a7f05f31ad593a8d6822cd410872cccb513b2d9d5535a33b7a489ffc21e206"
+              "url": "https://homebrew.bintray.com/bottles/terraform-0.13.3.mojave.bottle.tar.gz",
+              "sha256": "b46ec78630a973af5b54e750bdc8c87d29b2e0202276093d39c1ea65228a0ae3"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/terraform-0.13.4.high_sierra.bottle.tar.gz",
-              "sha256": "ffc0d620e8b3ec23b0265ff4b46aa1158b9149cd05210c2da498b6ac1bc4b9aa"
+              "url": "https://homebrew.bintray.com/bottles/terraform-0.13.3.high_sierra.bottle.tar.gz",
+              "sha256": "a57290b8006ff759d286aa610d91cc1faa9a71884b881b4666368359b2047adc"
             }
           }
         }
@@ -1769,7 +1769,28 @@
           }
         }
       },
-      "bufbuild/buf/buf": null
+      "bufbuild/buf/buf": null,
+      "grpcurl": {
+        "version": "1.7.0",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/grpcurl-1.7.0.catalina.bottle.tar.gz",
+              "sha256": "b141489fbe726a3f534d86a0f53af867a7b4bff1a92c1c8305e73d5e0fb6f87a"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/grpcurl-1.7.0.mojave.bottle.tar.gz",
+              "sha256": "99121cc3d5c1b521dc69511609d1214b4c297a136902e08384161418ceb320dd"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/grpcurl-1.7.0.high_sierra.bottle.tar.gz",
+              "sha256": "c62f76f233dfa5686d3018b351436d469ce142c5714cbe67960478c2a5e4f640"
+            }
+          }
+        }
+      }
     },
     "cask": {
       "1password-cli": {
@@ -1779,19 +1800,19 @@
         }
       },
       "android-studio": {
-        "version": "3.6.2.0,192.6308749",
+        "version": "3.6.1.0,192.6241897",
         "options": {
           "full_name": "android-studio"
         }
       },
       "appcleaner": {
-        "version": "3.5",
+        "version": "3.4",
         "options": {
           "full_name": "appcleaner"
         }
       },
       "bettertouchtool": {
-        "version": "3.346-1554",
+        "version": "2.08",
         "options": {
           "full_name": "bettertouchtool"
         }
@@ -1809,7 +1830,7 @@
         }
       },
       "docker": {
-        "version": "2.2.0.5,43884",
+        "version": "17.06.2-ce-mac27,19124",
         "options": {
           "full_name": "docker"
         }
@@ -1821,7 +1842,7 @@
         }
       },
       "firefox": {
-        "version": "75.0",
+        "version": "52.0.2",
         "options": {
           "full_name": "firefox"
         }
@@ -1833,7 +1854,7 @@
         }
       },
       "google-chrome": {
-        "version": "83.0.4103.97",
+        "version": "latest",
         "options": {
           "full_name": "google-chrome"
         }
@@ -1845,13 +1866,13 @@
         }
       },
       "insomnia": {
-        "version": "7.1.1",
+        "version": "5.0.10",
         "options": {
           "full_name": "insomnia"
         }
       },
       "iterm2": {
-        "version": "3.3.9",
+        "version": "3.0.15",
         "options": {
           "full_name": "iterm2"
         }
@@ -1863,7 +1884,7 @@
         }
       },
       "karabiner-elements": {
-        "version": "12.9.0",
+        "version": "11.1.0",
         "options": {
           "full_name": "karabiner-elements"
         }
@@ -1875,13 +1896,13 @@
         }
       },
       "skitch": {
-        "version": "2.8.1",
+        "version": "2.8",
         "options": {
           "full_name": "skitch"
         }
       },
       "slack": {
-        "version": "4.4.1",
+        "version": "2.5.2",
         "options": {
           "full_name": "slack"
         }
@@ -1893,19 +1914,19 @@
         }
       },
       "tableplus": {
-        "version": "3.3.0,300",
+        "version": "2.8.1,252",
         "options": {
           "full_name": "tableplus"
         }
       },
       "visual-studio-code": {
-        "version": "1.44.0",
+        "version": "1.28.2,7f3ce96ff4729c91352ae6def877e59c561f4850",
         "options": {
           "full_name": "visual-studio-code"
         }
       },
       "vivaldi": {
-        "version": "2.11.1811.52",
+        "version": "2.9.1705.41",
         "options": {
           "full_name": "vivaldi"
         }
@@ -1939,10 +1960,10 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.5.2",
+        "HOMEBREW_VERSION": "2.5.2-69-g2331927",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "6f4b59f73cf15d0467075d58e08c34c4a7d999f5",
-        "CLT": "1103.0.32.62",
+        "Homebrew/homebrew-core": "f8b3cb66aa8312f5172138b6fc2214fcacd38a8e",
+        "CLT": "1103.0.32.29",
         "Xcode": "12.0.1",
         "macOS": "10.15.6"
       }
