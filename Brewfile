@@ -36,7 +36,6 @@ brew "isl"
 brew "mpfr"
 brew "libmpc"
 brew "gcc"
-brew "gcc@5", link: false
 brew "gh"
 brew "ghq"
 brew "gibo"
