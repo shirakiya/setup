@@ -100,6 +100,7 @@ brew "knqyf263/pet/pet"
 brew "sanemat/font/ricty", args: ["with-powerline"]
 brew "shirakiya/alug/alug"
 cask "1password"
+cask "android-file-transfer"
 cask "android-studio"
 cask "appcleaner"
 cask "bettertouchtool"
