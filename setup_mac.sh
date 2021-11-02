@@ -50,4 +50,8 @@ if ! exist $DOTFILES; then
   sh $DOTFILES/dotfilesLink.sh
 fi
 
+# Enable key repeat for Visual Studio Code.
+# ref. https://qiita.com/kenmaro/items/1abcf21b38a8e0078370
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 exit 0
