@@ -36,17 +36,11 @@ fi
 
 # install Homebrew and apps
 if ! enabled brew; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   cd $SETUP
   brew update
-  brew bundle --file=Brewfile
+  make brew/bundle
   cd $HOME
-
-  # use openssl installed with Homebrew
-  OPENSSL_PATH=`which openssl`
-  if [ $OPENSSL_PATH = '/usr/bin/openssl' ]; then
-    brew link openssl --force
-  fi
 fi
 
 # cloning my dotfiles
