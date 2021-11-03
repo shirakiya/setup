@@ -54,4 +54,9 @@ fi
 # ref. https://qiita.com/kenmaro/items/1abcf21b38a8e0078370
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
+# Disable to print "Last login..." at console login for Mac.
+if [ ! -f $HOME/.hushlogin ]; then
+  touch $HOME/.hushlogin
+fi
+
 exit 0
