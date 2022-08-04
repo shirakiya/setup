@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -eu
 
-REPOS=./repo_list
+REPO_FILE=./my_repos.txt
 
 while read line
 do
   echo "ghq get ${line}..."
   ghq get git@github.com:${line}.git
-done < $REPOS
+done < $REPO_FILE
