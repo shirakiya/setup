@@ -43,6 +43,17 @@ if ! enabled brew; then
   cd $HOME
 fi
 
+# Setup git-secrets
+IS_NOT_FOUND_GITSECRETS=0
+_=$(git secrets 2>&1 > /dev/null) || IS_NOT_FOUND_GITSECRETS=$?
+if [ $IS_NOT_FOUND_GITSECRETS -eq 0 ]; then
+  git secrets --register-aws --global          # AWS
+  git secrets --add 'private_key' --global     # GCP
+  git secrets --add 'private_key_id' --global  # GCP
+  git secrets --install ~/.git-templates/git-secrets
+  git config --global init.templateDir ~/.git-templates/git-secrets
+fi
+
 # cloning my dotfiles
 DOTFILES=$HOME/dotfiles
 if ! exist $DOTFILES; then
