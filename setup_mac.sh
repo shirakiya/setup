@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -u
+set -euo pipefail
+
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 enabled() {
@@ -31,12 +32,12 @@ fi
 
 SETUP=$HOME/setup
 if ! exist $SETUP; then
-    git clone git@github.com:shirakiya/setup.git $SETUP
+  git clone git@github.com:shirakiya/setup.git $SETUP
 fi
 
 # install Homebrew and apps
 if ! enabled brew; then
-  sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   cd $SETUP
   brew update
   make brew/bundle
