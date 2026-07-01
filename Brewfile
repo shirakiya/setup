@@ -100,6 +100,8 @@ brew "libtool"
 brew "graphviz"
 # Like cURL, but for gRPC
 brew "grpcurl"
+# Smarter Dockerfile linter to validate best practices
+brew "hadolint"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Lightweight and flexible command-line JSON processor
