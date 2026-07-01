@@ -251,8 +251,6 @@ cask "obsidian"
 cask "postman"
 # Control your tools with a few keystrokes
 cask "raycast"
-# Software for Realforce keyboards and mice
-cask "realforce"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
