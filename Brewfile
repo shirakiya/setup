@@ -46,6 +46,8 @@ brew "libsodium"
 brew "zeromq"
 # High-level C binding for ZeroMQ
 brew "czmq"
+# TIFF library and utilities
+brew "libtiff"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Load/unload environment variables based on $PWD
@@ -216,14 +218,14 @@ cask "appcleaner"
 cask "bettertouchtool"
 # Virtual Audio Driver
 cask "blackhole-2ch"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# OpenAI's Codex desktop app for managing coding agents
-cask "codex-app"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 # Client for the Dropbox cloud storage service
@@ -322,6 +324,7 @@ vscode "ms-vscode.vscode-chat-customizations-evaluations"
 vscode "nonylene.dark-molokai-theme"
 vscode "octref.vetur"
 vscode "openai.chatgpt"
+vscode "redhat.vscode-xml"
 vscode "richie5um2.vscode-sort-json"
 vscode "shardulm94.trailing-spaces"
 vscode "takumii.markdowntable"
