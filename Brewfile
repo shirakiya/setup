@@ -267,8 +267,6 @@ cask "terraform-linters/tap/tflint", trusted: true
 cask "the-unarchiver"
 # Open-source code editor
 cask "visual-studio-code"
-# Web browser with built-in email client focusing on customization and control
-cask "vivaldi"
 # Multimedia player
 cask "vlc"
 # Video communication and virtual meeting platform
