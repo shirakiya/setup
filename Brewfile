@@ -188,6 +188,8 @@ brew "wget"
 brew "yarn"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Find security issues in GitHub Actions setups
+brew "zizmor"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
@@ -330,6 +332,7 @@ vscode "tamasfe.even-better-toml"
 vscode "tsandall.opa"
 vscode "vscodevim.vim"
 vscode "xaver.clang-format"
+vscode "zizmor.zizmor-vscode"
 go "cmd/go"
 go "cmd/gofmt"
 npm "corepack"
