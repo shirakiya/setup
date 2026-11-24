@@ -239,6 +239,8 @@ cask "font-hackgen"
 cask "gcloud-cli"
 # Web browser
 cask "google-chrome"
+# Native desktop AI assistant from Google
+cask "google-gemini"
 # Japanese input software
 cask "google-japanese-ime"
 # Screenshot and screen recording tool
