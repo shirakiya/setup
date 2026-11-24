@@ -210,8 +210,6 @@ brew "sanemat/font/ricty", args: ["with-powerline"]
 brew "shirakiya/alug/alug"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Transfer files from and to an Android smartphone
-cask "android-file-transfer"
 # Tools for building Android applications
 cask "android-studio"
 # Application uninstaller
