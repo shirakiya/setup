@@ -49,16 +49,18 @@ if ! exist $SETUP; then
   git clone git@github.com:shirakiya/setup.git $SETUP
 fi
 
-# install Homebrew and apps
+# install Homebrew
 load_brew_shellenv
 if ! enabled brew; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   load_brew_shellenv
-  cd $SETUP
-  brew update
-  make brew/bundle
-  cd $HOME
 fi
+
+# install apps via Homebrew
+cd $SETUP
+brew update
+make brew/bundle
+cd $HOME
 
 # cloning my dotfiles
 DOTFILES=$HOME/dotfiles
