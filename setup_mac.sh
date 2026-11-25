@@ -5,22 +5,21 @@ set -euo pipefail
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 enabled() {
-    type $1 > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        echo "\033[32mAlready installed $1\033[m"
+    if type "$1" > /dev/null 2>&1; then
+        printf '\033[32mAlready installed %s\033[m\n' "$1"
         return 0
     else
-        echo "\033[31mInstall $1 just now ...\033[m"
+        printf '\033[31mInstall %s just now ...\033[m\n' "$1"
         return 1
     fi
 }
 
 exist() {
-    if [ -e $1 ]; then
-        echo "\033[32mAlready cloned to $1 through Git\033[m"
+    if [ -e "$1" ]; then
+        printf '\033[32mAlready cloned to %s through Git\033[m\n' "$1"
         return 0
     else
-        echo "\033[31mClone to $1 just now ...\033[m"
+        printf '\033[31mClone to %s just now ...\033[m\n' "$1"
         return 1
     fi
 }
@@ -44,9 +43,9 @@ else
   printf '\033[32mAlready installed Command Line Tools\033[m\n'
 fi
 
-SETUP=$HOME/setup
-if ! exist $SETUP; then
-  git clone git@github.com:shirakiya/setup.git $SETUP
+SETUP="$HOME/setup"
+if ! exist "$SETUP"; then
+  git clone git@github.com:shirakiya/setup.git "$SETUP"
 fi
 
 # install Homebrew
@@ -57,16 +56,16 @@ if ! enabled brew; then
 fi
 
 # install apps via Homebrew
-cd $SETUP
+cd "$SETUP"
 brew update
 make brew/bundle
-cd $HOME
+cd "$HOME"
 
 # cloning my dotfiles
-DOTFILES=$HOME/dotfiles
-if ! exist $DOTFILES; then
-  git clone git@github.com:shirakiya/dotfiles.git $DOTFILES
-  sh $DOTFILES/dotfilesLink.sh
+DOTFILES="$HOME/dotfiles"
+if ! exist "$DOTFILES"; then
+  git clone git@github.com:shirakiya/dotfiles.git "$DOTFILES"
+  sh "$DOTFILES/dotfilesLink.sh"
 fi
 
 # Enable key repeat for Visual Studio Code.
@@ -74,8 +73,8 @@ fi
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Disable to print "Last login..." at console login for Mac.
-if [ ! -f $HOME/.hushlogin ]; then
-  touch $HOME/.hushlogin
+if [ ! -f "$HOME/.hushlogin" ]; then
+  touch "$HOME/.hushlogin"
 fi
 
 exit 0
