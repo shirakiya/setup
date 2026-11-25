@@ -25,9 +25,23 @@ exist() {
     fi
 }
 
+load_brew_shellenv() {
+    if [ -x /opt/homebrew/bin/brew ]; then
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    fi
+}
+
 # install command line tools
-if ! enabled xcode-select; then
+if ! xcode-select -p > /dev/null 2>&1; then
+  printf '\033[31mInstall Command Line Tools just now ...\033[m\n'
   xcode-select --install
+  printf '\033[33mWaiting for Command Line Tools installation to complete...\033[m\n'
+  until xcode-select -p > /dev/null 2>&1; do
+    sleep 5
+  done
+  printf '\033[32mCompleted Command Line Tools installation\033[m\n'
+else
+  printf '\033[32mAlready installed Command Line Tools\033[m\n'
 fi
 
 SETUP=$HOME/setup
@@ -36,8 +50,10 @@ if ! exist $SETUP; then
 fi
 
 # install Homebrew and apps
+load_brew_shellenv
 if ! enabled brew; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  load_brew_shellenv
   cd $SETUP
   brew update
   make brew/bundle

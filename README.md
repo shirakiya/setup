@@ -18,7 +18,7 @@ Host github.com
 
 ## Usage
 ```
-curl -fsSL https://raw.github.com/shirakiya/setup/master/setup_mac.sh | sh
+bash <(curl -fsSL https://raw.githubusercontent.com/shirakiya/setup/main/setup_mac.sh)
 ```
 
 
