@@ -160,22 +160,18 @@ brew "pstree"
 brew "pyenv"
 # Pyenv plugin to manage virtualenv
 brew "pyenv-virtualenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Command-line tool to manage Scala environments
 brew "scalaenv"
 # Editor of encrypted files
 brew "sops"
 # Source-code syntax highlighter
 brew "source-highlight"
-# Code-search similar to ack
-brew "the_silver_searcher"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
